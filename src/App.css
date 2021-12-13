@@ -94,7 +94,7 @@ header li {
   padding-right: 20px;
 }
 
-input[type="number"] {
+input[type='number'] {
   width: 50px;
 }
 
@@ -175,13 +175,13 @@ fieldset[disabled] .btn {
   box-shadow: none;
 }
 
-p[role="alert"] {
+p[role='alert'] {
   display: inline;
   margin-left: 10px;
   color: red;
 }
 
-div[role="alert"] {
+div[role='alert'] {
   color: red;
 }
 
@@ -194,7 +194,7 @@ form > div {
 }
 
 .lds-container {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -204,7 +204,7 @@ form > div {
   height: 80px;
 }
 .lds-dual-ring:after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 64px;
   height: 64px;
