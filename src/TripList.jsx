@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import { getBusinessTrips } from "./tripsService.js";
+import { getBusinessTrips } from './tripsService.js';
 
 // functional component TripList, deconstruct props!
 function TripList({ dispatch }) {
@@ -28,9 +28,7 @@ function TripList({ dispatch }) {
     <div className="container">
       <section>
         <h4 className="h4">Business Trips - Planned 2021</h4>
-        <div className="row">
-          {tripsMapped.length > 0 ? tripsMapped : empty}
-        </div>
+        <div className="row">{tripsMapped.length > 0 ? tripsMapped : empty}</div>
       </section>
     </div>
   );
@@ -44,7 +42,7 @@ function Trip({ dispatch, trip }) {
     <div className="col-sm-6 col-md-4 col-lg-3">
       <figure className="card card-product">
         <div className="img-wrap">
-          <img src={"images/items/" + id + ".jpg"} alt="name " />
+          <img src={'images/items/' + id + '.jpg'} alt="name " />
         </div>
         <figcaption className="info-wrap">
           <a href="#. . . " className="title">
@@ -58,7 +56,7 @@ function Trip({ dispatch, trip }) {
             <button
               type="button"
               className="btn btn-link btn-outline"
-              onClick={() => dispatch({ type: "add", ...trip })}
+              onClick={() => dispatch({ type: 'add', ...trip })}
             >
               <i /*className="fa fa-luggage-cart"*/ /> Add to Triplist
             </button>
