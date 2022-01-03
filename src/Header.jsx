@@ -6,7 +6,11 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <img width="150px" alt="Carved Rock Fitness" src="/images/logo.png" />
+            <img
+              width="150px"
+              alt="Carved Rock Fitness"
+              src={process.env.PUBLIC_URL + '/images/logo.png'}
+            />
           </li>
         </ul>
       </nav>
