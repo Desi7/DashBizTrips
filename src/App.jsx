@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-//import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from './Footer';
 import Header from './Header';
 import Spinner from './Spinner';
@@ -20,7 +19,7 @@ export default function App() {
             <img src={'images/items/' + t.id + '.jpg'} alt="name " />
           </div>
           <figcaption>
-            <a href="#. . . ">{t.title}</a>
+            {t.title}
             <div>
               <span>{t.startTrip[2] + '-' + t.startTrip[1] + '-' + t.startTrip[0]}</span>
             </div>
