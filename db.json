@@ -24,8 +24,20 @@
       "id": 2,
       "title": "BT02",
       "description": "Santa Clara Halley on new Server/IOT/Client",
-      "startTrip": [2021, 6, 23, 9, 0],
-      "endTrip": [2021, 6, 27, 16, 56],
+      "startTrip": [
+        2021,
+        6,
+        23,
+        9,
+        0
+      ],
+      "endTrip": [
+        2021,
+        6,
+        27,
+        16,
+        56
+      ],
       "meetings": [
         {
           "id": 3,
@@ -43,8 +55,20 @@
       "id": 3,
       "title": "BT03",
       "description": "San Cose City Halley on Docker/IOT/Client",
-      "startTrip": [2021, 12, 13, 9, 0],
-      "endTrip": [2021, 12, 15, 16, 56],
+      "startTrip": [
+        2021,
+        12,
+        13,
+        9,
+        0
+      ],
+      "endTrip": [
+        2021,
+        12,
+        15,
+        16,
+        56
+      ],
       "meetings": [
         {
           "id": 5,
