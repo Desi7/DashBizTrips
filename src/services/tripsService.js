@@ -1,6 +1,5 @@
 const baseUrl = process.env.REACT_APP_API_BASE_URL;
 
-
 export async function deleteTrip(id) {
   await fetch(`${baseUrl}trips/${id}`, { method: 'DELETE' });
 }
