@@ -1,11 +1,10 @@
-export async function getBusinessTrips() {
-  const response = await fetch('http://localhost:3001/trips');
-  if (response.ok) return response.json();
-  throw response;
+const baseUrl = process.env.REACT_APP_API_BASE_URL;
+
+export async function deleteTrip(id) {
+  await fetch(`${baseUrl}trips/${id}`, { method: 'DELETE' });
 }
-export async function getWishlistItems() {
-  // fetch wishlists from api
-  const response = await fetch('http://localhost:8080/v1/trips');
-  if (response.ok) return response.json();
-  throw response;
+
+export async function getTrips() {
+  const response = await fetch(`${baseUrl}trips`);
+  return await response.json();
 }

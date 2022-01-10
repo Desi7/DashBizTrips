@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
 import Spinner from './Spinner';
-import useFetch from './services/useFetch';
+import { deleteTrip, getTrips } from './services/tripsService';
 
 export default function App() {
   const [month, setMonth] = useState('');
 
-  const { data: trips, loading: loadingTrips, error: errorTrips } = useFetch('trips');
+  const [trips, setTrips] = useState([]);
+  const [errorTrips, setError] = useState(null);
+  const [loadingTrips, setLoading] = useState(true);
+
+  useEffect(() => {
+    getTrips()
+      .then((data) => {
+        setTrips(data);
+        setLoading(false);
+      })
+      .catch((e) => {
+        setError(e);
+        setLoading(false);
+      });
+  }, []);
+
   const months = ['Idle', 'Jan', 'Feb', 'March', 'April', 'Mai', 'June'];
 
   function renderTrip(t) {
@@ -28,12 +43,22 @@ export default function App() {
               <button type="button" disabled>
                 Add to Triplist
               </button>
+              <button
+                onClick={() => {
+                  deleteTrip(t.id).then(() =>
+                    setTrips((oldTrips) => oldTrips.filter((trip) => trip.id !== t.id))
+                  );
+                }}
+              >
+                delete
+              </button>
             </div>
           </figcaption>
         </figure>
       </div>
     );
   }
+
   // if month selected then filter the trips from month === month
   const filteredTrips = month ? trips.filter((t) => t.startTrip[1] === parseInt(month)) : trips;
 
