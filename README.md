@@ -55,27 +55,30 @@ and Sprint Retrospective) in a PDF document, which you hand in at the end of the
 ### Our thought on our Project
 </span>
 
-h,lol,km ujhzbgrvfct bhnjk,kumjznhtbgr
+We think our Project is the best ever made, we did everything perfectly and there is no room for improvement whatsoever.
 
 <span style="color: blue;">
 
 ###Closing Word
 </span>
 
-h
+We really enjoyed the agile working, and will continue working like this in our company.
 
 <span style="color: purple;">
 
 ###Autothor
+🚕🔨⚡
 </span>
 
-Desirée Hilti
+**Desirée Hilti**
 
+###
+**Nils Heydecker**
+> Agile project management is the future of software development
 
 ###
 
-####You can view our DashBizTrip Application on [GitHub](https://github.com/Desi7/DashBizTrips).
+<span style="color: orange;">
 
-
-
-> Quote
+###You can view our DashBizTrip Application on [GitHub](https://github.com/Desi7/DashBizTrips).
+</span>
