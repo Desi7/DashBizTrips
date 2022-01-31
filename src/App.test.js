@@ -16,3 +16,14 @@ test('adds 1 + 2 to equal 3', () => {
 test('two plus two is four', () => {
   expect(2 + 2).toBe(4);
 });
+
+
+//----
+test('not true and false is false', () => {
+  expect(!true && false).toBe(false);
+});
+
+//----
+test('spinner to be spinning', () => {
+  expect({ spinning: true }.spinning).toBeTruthy();
+});
