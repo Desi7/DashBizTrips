@@ -29,7 +29,7 @@ a-assignment
 - y-you use github a-as the scwum t-toow of youw pwoject.
 - you define a scwum mastew (niws h-heydeckew) who is in contact with the p-pwoduct ownew (wuigi cavuoti). (///ˬ///✿)
 - togethew in the devewopment team, ^^;; you define the spwint backwog a-and the associated items ow
-  usew s-stowies. >_<
+  usew s-stowies. >\_<
   - y-you wwite sevewaw u-usew stowies on youw topic and stowe them in the issue boawd o-on
     github! rawr x3
 - f-fow the spwint backwog you have t-to sewect the backwog i-items fwom the pwoduct backwog. /(^•ω•^)
