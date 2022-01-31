@@ -58,7 +58,7 @@ export default function ShowTrips({ trip, setTrips }) {
               onClick={() => {
                 if (window.confirm(`Delete the trip ${trip.title}?`))
                   deleteTrip(trip.id).then(() => {
-                    setTrips((oldTrips) => oldTrips.filter((trip) => trip.id !== trip.id));
+                    setTrips((oldTrips) => oldTrips.filter((oldTrip) => oldTrip.id !== trip.id));
                     window.location.reload(false);
                   });
               }}
